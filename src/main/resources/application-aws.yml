@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+
+app:
+  storage:
+    bucket: ${S3_BUCKET}
+    region: ${AWS_REGION}
+    path-style-access: false
+
