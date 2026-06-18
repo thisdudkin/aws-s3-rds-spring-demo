@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: image-storage
+  servlet:
+    multipart:
+      max-file-size: 5MB
+      max-request-size: 5MB
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: update
+
+app:
+  storage:
+    max-file-size-bytes: 5242880
+

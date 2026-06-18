@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/${POSTGRES_DB:image_storage}
+    username: ${POSTGRES_USER:image_app}
+    password: ${POSTGRES_PASSWORD}
+
+app:
+  storage:
+    bucket: ${S3_BUCKET:image-uploads}
+    region: ${AWS_REGION:us-east-1}
+    endpoint: ${S3_ENDPOINT:http://localhost:4566}
+    path-style-access: true
+
